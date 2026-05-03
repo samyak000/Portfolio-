@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Samyak | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Outfit:wght@400;600;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+
+  <canvas id="stars"></canvas>
+
+  <!-- TOPBAR -->
+  <nav class="topbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="https://github.com/samyak000" target="_blank">GitHub</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="theme-toggle">🌙</button></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="greeting">Hi, I'm</p>
+      <h1 class="main-name">
+        Samyak <span>Jain</span>
+      </h1>
+      <h2><span id="typing"></span></h2>
+      <p class="hero-description">Building premium web experiences with modern technologies.</p>
+      <div class="buttons">
+        <button class="btn glow" onclick="scrollToSection('projects')">
+          Explore Work <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <a href="#contact" class="btn outline">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about-content glass reveal">
+      <p>I am a full stack web developer with a passion for creating interactive and responsive web applications. I have
+        experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS, and Git. I
+        am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am
+        excited to work with others to create amazing applications.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2 class="section-title">Expertise and <span>Skills</span></h2>
+
+    <div class="skills-grid reveal">
+
+      <div class="skills-category glass">
+        <h3><i class="fa-solid fa-code" style="color: #3b82f6; margin-right: 10px;"></i> Programming Languages</h3>
+        <div class="skills-container">
+          <div class="skill-tag"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+          <div class="skill-tag"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+          <div class="skill-tag"><i class="devicon-c-plain colored"></i><span>C</span></div>
+          <div class="skill-tag"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+          <div class="skill-tag"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+        </div>
+      </div>
+
+      <div class="skills-category glass">
+        <h3><i class="fa-regular fa-window-maximize" style="color: #3b82f6; margin-right: 10px;"></i> Web Technologies
+        </h3>
+        <div class="skills-container">
+          <div class="skill-tag"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+          <div class="skill-tag"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+          <div class="skill-tag"><i class="devicon-react-original colored"></i><span>React.js</span></div>
+          <div class="skill-tag"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+          <div class="skill-tag"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+          <div class="skill-tag"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+          <div class="skill-tag"><i class="devicon-express-original colored"></i><span>Express.js</span></div>
+          <div class="skill-tag"><i class="fa-solid fa-key" style="color: #ec4899;"></i><span>JWT</span></div>
+          <div class="skill-tag"><i class="fa-solid fa-network-wired" style="color: #8b5cf6;"></i><span>REST API</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="skills-category glass">
+        <h3><i class="fa-solid fa-database" style="color: #3b82f6; margin-right: 10px;"></i> Databases</h3>
+        <div class="skills-container">
+          <div class="skill-tag"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+          <div class="skill-tag"><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></div>
+          <div class="skill-tag"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+          <div class="skill-tag"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+        </div>
+      </div>
+
+      <div class="skills-category glass">
+        <h3><i class="fa-solid fa-bolt" style="color: #3b82f6; margin-right: 10px;"></i> AI / ML</h3>
+        <div class="skills-container">
+          <div class="skill-tag"><i class="devicon-tensorflow-original colored"></i><span>TensorFlow</span></div>
+          <div class="skill-tag"><i class="devicon-pytorch-original colored"></i><span>PyTorch</span></div>
+          <div class="skill-tag"><i class="devicon-pandas-plain colored"></i><span>Pandas</span></div>
+          <div class="skill-tag"><i class="devicon-numpy-plain colored"></i><span>NumPy</span></div>
+          <div class="skill-tag"><i class="devicon-opencv-plain colored"></i><span>OpenCV</span></div>
+          <div class="skill-tag"><i class="fa-solid fa-brain" style="color: #10b981;"></i><span>OpenAI</span></div>
+
+          <div class="skill-tag"><i class="fa-solid fa-link" style="color: #64748b;"></i><span>LangChain</span></div>
+          <div class="skill-tag"><i class="devicon-scikitlearn-plain colored"></i><span>Scikit-learn</span></div>
+        </div>
+      </div>
+
+      <div class="skills-category glass">
+        <h3><i class="fa-solid fa-gear" style="color: #3b82f6; margin-right: 10px;"></i> DevOps & Tools</h3>
+        <div class="skills-container">
+          <div class="skill-tag"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+          <div class="skill-tag"><i class="devicon-github-original"></i><span>GitHub</span></div>
+          <div class="skill-tag"><i class="fa-solid fa-rotate" style="color: #f97316;"></i><span>CI/CD</span></div>
+          <div class="skill-tag"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+          <div class="skill-tag"><i class="devicon-npm-original-wordmark colored"></i><span>npm</span></div>
+          <div class="skill-tag"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+          <div class="skill-tag"><i class="fa-solid fa-layer-group" style="color: #ef4444;"></i><span>Streamlit</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category glass">
+        <h3><i class="fa-solid fa-globe" style="color: #3b82f6; margin-right: 10px;"></i> Core Competencies</h3>
+        <div class="skills-container">
+          <div class="skill-tag"><i class="fa-solid fa-brain" style="color: #ec4899;"></i><span>Algorithms</span></div>
+          <div class="skill-tag"><i class="fa-solid fa-server" style="color: #3b82f6;"></i><span>Data Structures</span>
+          </div>
+          <div class="skill-tag"><i class="fa-solid fa-cubes" style="color: #6366f1;"></i><span>OOP</span></div>
+          <div class="skill-tag"><i class="fa-solid fa-plug" style="color: #0ea5e9;"></i><span>API Integration</span>
+          </div>
+          <div class="skill-tag"><i class="fa-solid fa-code" style="color: #eab308;"></i><span>Leetcode</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Featured <span>Projects</span></h2>
+    <div class="projects-grid reveal">
+
+      <!-- New Project with Image -->
+      <div class="project-card glass with-image">
+        <div class="project-image">
+          <img src="images/hospital_resource.png" alt="Hospital Resource Provider Dashboard">
+        </div>
+        <div class="project-content">
+          <h3>Hospital Resource Provider</h3>
+          <p>A comprehensive web platform for managing and booking hospital resources like beds and oxygen cylinders in
+            real-time.</p>
+          <div class="project-tech-stack">
+            <span>Python</span>
+            <span>Django</span>
+            <span>SQLite</span>
+            <span>HTML/CSS</span>
+          </div>
+          <div class="project-actions mt-4">
+            <a href="https://github.com/samyak000/Hospital-Resource-Provider-" target="_blank"
+              class="btn outline project-btn">
+              <i class="fa-brands fa-github"></i> Repository
+            </a>
+            <a href="https://samyak0002.pythonanywhere.com/core/login/" target="_blank" class="btn glow project-btn"
+              style="border: none;">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card glass with-image">
+        <div class="project-image">
+          <img src="images/chatbot.png" alt="AI Chatbot Interface">
+        </div>
+        <div class="project-content">
+          <h3>AI Chatbot</h3>
+          <p>A sophisticated Gemini-powered conversational assistant designed for seamless user interactions and
+            contextual responses.</p>
+          <div class="project-tech-stack">
+            <span>Python</span>
+            <span>Gemini API</span>
+            <span>JavaScript</span>
+            <span>CSS3</span>
+          </div>
+          <div class="project-actions mt-4">
+            <a href="https://github.com/samyak000/chatbot" target="_blank" class="btn outline project-btn">
+              <i class="fa-brands fa-github"></i> Repository
+            </a>
+            <a href="https://aichatbot-pink-seven.vercel.app/" target="_blank" class="btn glow project-btn"
+              style="border: none;">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card glass with-image">
+        <div class="project-image">
+          <img src="images/playzen.png" alt="PlayZen Movie Platform Mockup">
+        </div>
+        <div class="project-content">
+          <h3>PlayZen</h3>
+          <p>A modern, lightweight movie streaming platform mockup featuring a curated collection of films, responsive
+            layouts, and smooth interactive elements.</p>
+          <div class="project-tech-stack">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Vanilla JS</span>
+          </div>
+          <div class="project-actions mt-4">
+            <a href="https://github.com/samyak000/playzen" target="_blank" class="btn outline project-btn">
+              <i class="fa-brands fa-github"></i> Repository
+            </a>
+            <a href="https://playzen-mu.vercel.app/" target="_blank" class="btn glow project-btn" style="border: none;">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Let's <span>Connect</span></h2>
+
+    <div class="contact-grid reveal">
+      <div class="contact-card glass">
+        <i class="fa-regular fa-envelope contact-icon"></i>
+        <h3>Email Me</h3>
+        <p>samyakjn22@gmail.com</p>
+        <a href="mailto:samyakjn22@gmail.com" class="btn outline mt-4">Send a Message</a>
+      </div>
+
+      <div class="contact-card glass">
+        <i class="fa-solid fa-phone contact-icon"></i>
+        <h3>Phone</h3>
+        <p>8588030321</p>
+        <a href="tel:+918588030321" class="btn outline mt-4">Call Me</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
