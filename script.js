@@ -127,7 +127,7 @@ function animate() {
 
     ctx.beginPath();
     ctx.arc(star.x, star.y, 2, 0, Math.PI * 2);
-    ctx.fillStyle = isLight ? "#ff0000" : "#38bdf8";
+    ctx.fillStyle = isLight ? "#ff0000" : "#ef4444";
     ctx.fill();
 
     // CONNECTIONS (optimized)
@@ -139,7 +139,7 @@ function animate() {
       if (dist < 10000) {
         ctx.strokeStyle = isLight
           ? "rgba(255,0,0,0.2)"
-          : "rgba(56,189,248,0.15)";
+          : "rgba(239,68,68,0.2)";
         ctx.beginPath();
         ctx.moveTo(star.x, star.y);
         ctx.lineTo(stars[j].x, stars[j].y);
